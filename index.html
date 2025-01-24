@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dossier</title>
+  
+    <!--
+    - favicon
+  -->
+  <link rel="icon" href="./assets/images/avatar-3.png" type="image/x-icon" />
+
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--
+    - #MAIN
+  -->
+
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
+
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img src="./assets/images/avatar-3.png" alt="yg" width="80" />
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name">Yashi Gupta</h1>
+
+            <p class="title">Solution Oriented</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:richard@example.com" class="contact-link"
+                  >yashig406@gmail.com</a
+                >
+              </div>
+            </li>
+
+            <!-- <li class="contact-item"> -->
+
+            <!-- <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div> -->
+
+            <!-- <div class="contact-info"> -->
+            <!-- <p class="contact-title">Phone</p> -->
+
+            <!-- <a href="tel:+12133522795" class="contact-link">+1 (213) 352-2795</a>
+            </div> -->
+<!-- 
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
+
+                <time datetime="1982-06-23">December 04, 2002</time>
+              </div>
+            </li> -->
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>Delhi, India</address>
+              </div>
+            </li>
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/yashi-gupta-a65218232/"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://x.com/yashig406" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a
+                href="https://www.instagram.com/probablyashi/"
+                class="social-link"
+              >
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://www.youtube.com/@yashig406" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a href="https://medium.com/@yashig406" class="social-link">
+                <ion-icon name="logo-medium"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="https://www.quora.com/profile/Yashi-Gupta-259" class="social-link">
+                <ion-icon name="logo-quora"></ion-icon>
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Blog</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a versatile software developer and technology enthusiast from
+            India, specializing in full-stack development, data structures,
+            and algorithms. I thrive on building innovative solutions that
+            combine functionality, efficiency, and user-centric design.
+          </p>
+
+          <p>
+            My passion lies in developing applications that are not only
+            technically robust but also intuitive and visually engaging.
+            Whether it's creating seamless frontend interfaces or architecting
+            scalable backend systems, I aim to deliver products that are both
+            impactful and easy to use. My goal is to turn ideas into solutions
+            that make a difference in the tech world.
+          </p>
+        </section>
+
+        <!--
+        - service
+      -->
+
+
+
+   
+          <section class="service">
+            <h3 class="h3 article-title">What I'm doing</h3>
+
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Full-Stack Development</h4>
+                  <p class="service-item-text">
+                    I specialize in both frontend and backend development,
+                    creating seamless and scalable applications.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-ds.svg"
+                    alt="Algorithm icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Data Structures & Algorithms
+                  </h4>
+                  <p class="service-item-text">
+                    I design efficient algorithms and choose the right data
+                    structures to solve complex problems.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg"
+                    alt="UI/UX Design icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">User-Centric Design</h4>
+                  <p class="service-item-text">
+                    I create intuitive and engaging user interfaces that enhance
+                    the overall experience.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-quote.svg"
+                    alt="Leadership icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Team Leadership</h4>
+                  <p class="service-item-text">
+                    As a leader, I foster collaboration and ensure the success
+                    of cross-functional teams in tech projects.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <!--
+          - testimonials
+        -->
+          <section class="testimonials">
+            <h3 class="h2 article-title">Highlights</h3>
+
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item style="padding: 20px;">
+                  <img
+                    src="./assets/images/gcp.jpeg"
+                    alt=""
+                    class="responsive-img"
+                    data-testimonials-avatar
+                  />
+                  <h4 class="h4" data-testimonials-title>
+                    Google Cloud Study Jam-2024
+                  </h4>
+                  <div style="color: rgb(202, 184, 184);">
+                    <p>
+                      As a GDSC Lead, I had the privilege of collaborating with over 75 students to facilitate their learning and exploration of Google Cloud technologies during the event.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item style="padding: 20px;">
+                  <img
+                    src="./assets/images/katalyst.jpeg"
+                    alt=""
+                    class="responsive-img"
+                    data-testimonials-avatar
+                  />
+                  <h4 class="h4" data-testimonials-title>
+                    Winner of Katalyst TechFest-2024
+                  </h4>
+                  <div style="color: rgb(202, 184, 184);" data-testimonials-text>
+                    <p>
+                      Winner of the Project Presentation with my team, Parvaan Pioneer, for our project, Ecoparali: Smart Stubble Management System.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item style="padding: 20px;">
+                  <img
+                    src="./assets/images/gfg.png"
+                    alt=""
+                    class="responsive-img"
+                    data-testimonials-avatar
+                  />
+                  <h4 class="h4" data-testimonials-title>
+                    Vice President@NIET
+                  </h4>
+                  <div style="color: rgb(202, 184, 184);" data-testimonials-text>
+                    <p>
+                      As Vice President of GFG NIET, I had the honor of welcoming Sir Sandeep Jain, founder of Geeks for Geeks, along with Akshay Kumar Paswan and Saurabh Mahawar. Their visit to NIET was a beacon of knowledge.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item style="padding: 20px;">
+                  <img
+                    src="./assets/images/coding ninjas.jpg"
+                    alt=""
+                    class="responsive-img"
+                    data-testimonials-avatar
+                  />
+                  <h4 class= h4 style="color: rgb(202, 184, 184)"data-testimonials-title>
+                    MeetUp of Coding Ninjas CA's
+                  </h4>
+                  <div style="color: rgb(202, 184, 184);" data-testimonials-text>
+                    <p>
+                      Exciting meetup of CA's to exchange innovative ideas and build connections and ended up winning the title of Most Interactive Campus Ambassador.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+                
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item style="padding: 20px;">
+                  <img
+                    src="./assets/images/azure_microsoft.jpg"
+                    alt=""
+                    class="responsive-img"
+                    data-testimonials-avatar
+                  />
+                  <h4 class="h4" data-testimonials-title>
+                   ICWL@Microsoft
+                  </h4>
+                  <div style="color: rgb(202, 184, 184);" data-testimonials-text>
+                    <p>
+                    As a part of Internship Week, I had the opportunity to gain hands-on experience with Azure under the guidance of industry experts.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item style="padding: 20px;">
+                  <img
+                    src="./assets/images/gdsc.jpeg"
+                    alt=""
+                    class="responsive-img"
+                    data-testimonials-avatar
+                  />
+                  <h4 class="h4" data-testimonials-title>
+                    Google Student Developer Clubs@NIET
+                  </h4>
+                  <div style="color: rgb(202, 184, 184);" data-testimonials-text>
+                    <p>
+                      As a GDSC Lead, I strived to create an inclusive environment, where students could explore and innovate with technology.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            
+             
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item style="padding: 20px;">
+                  <img
+                    src="./assets/images/WhatsApp Image 2025-01-17 at 17.16.15_7c53183f.jpg"
+                    alt=""
+                    class="responsive-img"
+                    data-testimonials-avatar
+                  />
+                  <h4 class="h4" data-testimonials-title>
+                    Google Student Developer Clubs@NIET
+                  </h4>
+                  <div style="color: rgb(202, 184, 184);" data-testimonials-text>
+                    <p>
+                      As a scholar at BuddyForStudy, I had the privilege of securing financial stability for my undergraduate fees, which greatly eased the burden of my education expenses. The support has been instrumental in shaping my academic and career.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item style="padding: 20px;">
+                  <img
+                    src="./assets/images/gur_microsoft.jpg"
+                    alt=""
+                    class="responsive-img"
+                    data-testimonials-avatar
+                  />
+                  <h4 class="h4" data-testimonials-title>
+                    Google Student Developer Clubs@NIET
+                  </h4>
+                  <div style="color: rgb(202, 184, 184);" data-testimonials-text>
+                    <p>
+                      Girls Who Code MeetUp @Microsoft-Gurugram was an inspiring event where young female coders gathered to share their passion for technology. This meetup provided a platform for attendees to exchange innovative ideas, network.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+               
+           
+
+            </ul>
+            
+            
+          </section>
+
+          <!--
+          - testimonials modal
+        -->
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/ava"
+                    alt=""
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title></h4>
+
+              
+
+          <!--
+          - clients
+        -->
+
+          <!-- <section class="clients">
+            <h3 class="h3 clients-title">Clients</h3>
+
+            <ul class="clients-list has-scrollbar">
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-1-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-2-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-3-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-4-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-5-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img
+                    src="./assets/images/logo-6-color.png"
+                    alt="client logo"
+                  />
+                </a>
+              </li>
+            </ul>
+          </section> -->
+        </article>
+
+        <!--
+        - #RESUME
+      -->
+
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+
+            <ul class="skills-list content-card" style="padding:10px; margin-top: 0;">
+
+              
+              <div style="display: flex; flex-wrap: wrap;">
+                <!-- Programming Languages -->
+                <img style="margin: 5px;" alt="Python" src="https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badge&logo=python&logoColor=white" />
+                <img style="margin: 5px;" alt="Java" src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white" />
+                <img style="margin: 5px;" alt="C" src="https://img.shields.io/badge/C-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white" />
+                <img style="margin: 5px;" alt="C++" src="https://img.shields.io/badge/C++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
+                <img style="margin: 5px;" alt="C#" src="https://img.shields.io/badge/C%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white" />
+                <img style="margin: 5px;" alt="JavaScript" src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />
+                <img style="margin: 5px;" alt="TypeScript" src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" />
+                <img style="margin: 5px;" alt="Bash Script" src="https://img.shields.io/badge/bash-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white" />
+                <img style="margin: 5px;" alt="Git" src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+                <img style="margin: 5px;" alt="YAML" src="https://img.shields.io/badge/yaml-%23008180.svg?style=for-the-badge&logo=yaml&logoColor=white" />
+                <img style="margin: 5px;" alt="XML" src="https://img.shields.io/badge/xml-%23F77F00.svg?style=for-the-badge&logo=xml&logoColor=white" />
+                
+                <!-- Databases -->
+                <img style="margin: 5px;" alt="MySQL" src="https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white" />
+                <img style="margin: 5px;" alt="NoSQL" src="https://img.shields.io/badge/NoSQL-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white" />
+                <img style="margin: 5px;" alt="MongoDB" src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white" />
+                
+                <!-- Frameworks & Tools -->
+                <img style="margin: 5px;" alt="ReactJS" src="https://img.shields.io/badge/React-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" />
+                <img style="margin: 5px;" alt="NodeJS" src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
+                <img style="margin: 5px;" alt="Gemini API" src="https://img.shields.io/badge/gemini%20API-FF00FF?style=for-the-badge&logo=gemini&logoColor=white" />
+                <img style="margin: 5px;" alt="ExpressJS" src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" />
+                <img style="margin: 5px;" alt="Bootstrap" src="https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white" />
+                <img style="margin: 5px;" alt="Streamlit" src="https://img.shields.io/badge/Streamlit-%23007ACC.svg?style=for-the-badge&logo=streamlit&logoColor=#FF4B4B" />
+                
+                <!-- Cloud & DevOps -->
+                <img style="margin: 5px;" alt="Google Cloud" src="https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" />
+                <img style="margin: 5px;" alt="Azure DevOps" src="https://img.shields.io/badge/Azure_DevOps-0078D7?style=for-the-badge&logo=azure-devops&logoColor=white" />
+                <img style="margin: 5px;" alt="Pipelines" src="https://img.shields.io/badge/Pipelines-0078D7?style=for-the-badge&logo=azure-pipelines&logoColor=white" />
+                <img style="margin: 5px;" alt="Linux" src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
+                
+                <!-- Tools -->
+               
+                <img style="margin: 5px;" alt="GitHub" src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" />
+                <img style="margin: 5px;" alt="VS Code" src="https://img.shields.io/badge/VS%20Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white" />
+                <img style="margin: 5px;" alt="Google Colab" src="https://img.shields.io/badge/Google_Colab-F9AB00?style=for-the-badge&logo=google-colab&logoColor=white" />
+                <img style="margin: 5px;" alt="IntelliJ IDEA" src="https://img.shields.io/badge/IntelliJ-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white" />
+                <img style="margin: 5px;" alt="Postman" src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" />
+                <img style="margin: 5px;" alt="Firebase" src="https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase" />
+                
+              </div>
+              
+            </ul>
+          </section>
+
+          <br>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">SDE Intern @Microsoft</h4>
+
+                <span>June 2024 - August 2024</span>
+
+                <p class="timeline-text">
+                  My internship at Microsoft was an incredible learning
+                  experience, where I gained hands-on expertise in CI/CD
+                  pipelines, Python, Bash scripting, and YAML. It enhanced my
+                  problem-solving skills, exposed me to real-world challenges,
+                  and provided invaluable insights into collaborative
+                  development within a global tech environment.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">GDSC Lead @NIET</h4>
+
+                <span>2023-2024</span>
+
+                <p class="timeline-text">
+                  As the Lead of GDSC, I had the opportunity to foster
+                  innovation, organize impactful events, and build a
+                  collaborative community of tech enthusiasts. This role
+                  enhanced my leadership, project management, and technical
+                  skills, while empowering others to grow and contribute to
+                  technology-driven solutions.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  SDE Intern @J.P Morgan Chase & Co.
+                </h4>
+
+                <span>March 2022 - May 2022</span>
+
+                <p class="timeline-text">
+                  At JP Morgan Chase, I worked on backend systems using Python
+                  and SQL, optimizing workflows, enhancing data processing, and
+                  gaining experience in scalable and secure financial
+                  technologies.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Education</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Bachelor of Technology</h4>
+                <span>Noida Institute of Engg. & Technology</span>
+                <span>(2021-Present)</span>
+
+                <p class="timeline-text">
+                  My B.Tech journey has been enriching, filled with technical
+                  learning, leadership roles, and hands-on experience through
+                  internships and hackathons. It helped me develop skills in
+                  AI/ML, full-stack development, and problem-solving while
+                  fostering growth and innovation.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Mentee</h4>
+                <span>Katalyst</span>
+                <span>(2021-Present)</span>
+
+                <p class="timeline-text">
+                  My Katalyst journey has been transformative, providing
+                  invaluable mentorship, skill development, and networking
+                  opportunities. It enhanced my confidence, leadership
+                  abilities, and technical expertise, preparing me to excel in
+                  both academics and professional endeavors.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Schooling</h4>
+
+                <span>St. Pauls School</span>
+                <!-- <span>2002 — 2004</span> -->
+
+                <p class="timeline-text">
+                  My schooling laid a strong foundation for my academic and
+                  personal growth. It instilled discipline, curiosity, and a
+                  love for learning while nurturing my problem-solving and
+                  collaborative skills. These experiences shaped my values and
+                  prepared me for future challenges.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+         
+
+          
+        </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Web design</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Applications</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Web development</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web design</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Applications</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/image.png"
+                      alt="finance"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">WanderMind</h3>
+
+                  <p class="project-category">ReactJs-Firebase-Gemini API</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://linkedin-postcraft-yashig406.streamlit.app/">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/postrack.jpg"
+                      alt="orizon"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Linkedin PostCraft</h3>
+
+                  <p class="project-category">Python-llama-Streamlit</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="https://www.datacamp.com/datalab/w/579dde27-d28e-4acd-88a7-b7317e1b8ed5/edit">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/p-3.png"
+                      alt="fundo"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Data Analysis of Netflix</h3>
+
+                  <p class="project-category">Python-Matplotlib</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/p-4.jpeg"
+                      alt="brawlhalla" 
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">
+                    50 States: A Quiz Game</h3>
+
+                  <p class="project-category">Tkinter-Python</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="https://github.com/yashigupta4623/Use-a-Pre-trained-Image-Classifier-to-Identify-Dog-Breeds">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/p-5.jpg"
+                      alt="dsm."
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Image-Classifier-to-Identify-Dog-Breeds</h3>
+
+                  <p class="project-category">Python-AI</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="https://github.com/yashigupta4623/EcoTrack-A-web-extension-to-track-Carbon-Footprints?tab=readme-ov-file">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/ecotrack.png"
+                      alt="metaspark"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">EcoTrack-A-web-extension-to-track-Carbon-Footprints</h3>
+
+                  <p class="project-category">Web design</p>
+                </a>
+              </li>
+   
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #BLOG
+      -->
+
+        <article class="blog" data-page="blog">
+          <header>
+            <h2 class="h2 article-title">Blog</h2>
+          </header>
+
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <a
+                  href="https://medium.com/@yashig406/turning-rejection-into-resilience-d263e0107db3"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/rejection.png"
+                      alt="Design conferences in 2022"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23"> Dec 9, 2023 </time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Turning Rejection into Resilience.
+                    </h3>
+
+                    <p class="blog-text">
+                      Rejection is an opportunity for your selection.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="https://www.youtube.com/watch?v=TTezgJKzU5E&t=26s">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/book.jpg"
+                      alt="Best fonts every designer"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Books</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">September 23, 2024</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">Guide to Daryaganj.</h3>
+
+                    <p class="blog-text">
+                      If you are a book lover, you must visit Daryaganj.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="https://www.youtube.com/shorts/soAM0_7kI4Q">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/id_card.jpg"
+                      alt="Design digest #80"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">Glimpse of Intern Week @Microsoft</h3>
+
+                    <p class="blog-text">
+                      A short to iterate the intern week @Microsoft.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="𝗛𝗼𝘄 𝗜 𝗰𝗿𝗮𝗰𝗸𝗲𝗱 𝘁𝘄𝗼 𝘀𝗰𝗵𝗼𝗹𝗮𝗿𝘀𝗵𝗶𝗽𝘀 𝗶𝗻 𝗮 𝗿𝗼𝘄?">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/scholarship.jpg"
+                      alt="UI interactions of the week"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                      Approach to tackle Scholarship
+                    </h3>
+
+                    <p class="blog-text">
+                      Being a Scholar of two Scholarship, this is how I did it.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="https://medium.com/@yashig406/my-iet-india-scholarship-award-experience-of-the-year-2023-guidance-for-the-year-2024-94d470c58cb1">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/ieee.png"
+                      alt="The forgotten art of spacing"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">
+                    Way to IET Scholarship
+                    </h3>
+
+                    <p class="blog-text">
+                      Maxime placeat, sed do eiusmod tempor incididunt ut labore
+                      et dolore magna aliqua.
+                    </p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="blog-post-item">
+                <a href="https://www.linkedin.com/posts/yashigupta406_personalgrowth-collegelife-networking-activity-7197905528625246208-qHMf?utm_source=share&utm_medium=member_desktop">
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/volunterr.jpeg"
+                      alt="Design digest #79"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Design</p>
+
+                      <span class="dot"></span>
+
+                      <time datetime="2022-02-23">Fab 23, 2022</time>
+                    </div>
+
+                    <h3 class="h3 blog-item-title">𝗙𝗿𝗼𝗺 𝗜𝗻𝘁𝗿𝗼𝘃𝗲𝗿𝘁 𝘁𝗼 𝗩𝗼𝗹𝘂𝗻𝘁𝗲𝗲𝗿: 𝗠𝘆 𝗝𝗼𝘂𝗿𝗻𝗲𝘆 𝗼𝗳 𝗚𝗿𝗼𝘄𝘁𝗵 📈</h3>
+
+                    <p class="blog-text">
+                      Optio cumque nihil impedit uo minus quod maxime placeat,
+                      velit esse cillum.
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--
+        - #CONTACT
+      -->
+
+      <!-- <div style="max-width:100%;overflow:hidden;color:red;width:500px;height:500px;"><div id="my-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src=""></iframe></div><a class="the-googlemap-enabler" rel="nofollow" href="https://www.bootstrapskins.com/themes" id="enable-maps-data">premium bootstrap themes</a><style>#my-map-display img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div> -->
+
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed/v1/place?q=delhi&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section>
+
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
