@@ -42,6 +42,17 @@
     </main>
 
     <script src="assets/cli/particles.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            initParticles({
+                color: 'rgba(0, 255, 65, ',
+                shadowColor: 'rgba(0, 255, 65, 0.5)',
+                minSize: 5,
+                maxSize: 10,
+                count: 40
+            });
+        });
+    </script>
     <script src="assets/cli/script.js"></script>
 </body>
 </html>

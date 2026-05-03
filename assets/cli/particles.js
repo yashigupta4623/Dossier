@@ -1,10 +1,20 @@
-function initParticles() {
+function initParticles(options = {}) {
     const canvas = document.getElementById('particles');
     if (!canvas) return;
     const ctx = canvas.getContext('2d');
     
+    // Default options (Green for CLI)
+    const defaults = {
+        color: 'rgba(0, 255, 65, ',
+        shadowColor: 'rgba(0, 255, 65, 0.5)',
+        minSize: 3,
+        maxSize: 6,
+        count: 40
+    };
+    
+    const settings = { ...defaults, ...options };
+    
     let particlesArray = [];
-    const numberOfParticles = 40;
     
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -18,10 +28,10 @@ function initParticles() {
         constructor() {
             this.x = Math.random() * canvas.width;
             this.y = Math.random() * canvas.height;
-            this.size = Math.random() * 10 + 5;
+            this.size = Math.random() * settings.maxSize + settings.minSize;
             this.speedX = Math.random() * 0.6 - 0.3;
             this.speedY = Math.random() * 0.6 - 0.3;
-            this.color = 'rgba(0, 255, 65, ' + (Math.random() * 0.3 + 0.1) + ')';
+            this.color = settings.color + (Math.random() * 0.3 + 0.1) + ')';
         }
         update() {
             this.x += this.speedX;
@@ -36,7 +46,7 @@ function initParticles() {
         draw() {
             ctx.fillStyle = this.color;
             ctx.shadowBlur = 10;
-            ctx.shadowColor = 'rgba(0, 255, 65, 0.5)';
+            ctx.shadowColor = settings.shadowColor;
             ctx.beginPath();
             ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
             ctx.fill();
@@ -45,7 +55,8 @@ function initParticles() {
     }
     
     function init() {
-        for (let i = 0; i < numberOfParticles; i++) {
+        particlesArray = [];
+        for (let i = 0; i < settings.count; i++) {
             particlesArray.push(new Particle());
         }
     }
@@ -62,5 +73,3 @@ function initParticles() {
     init();
     animate();
 }
-
-window.addEventListener('DOMContentLoaded', initParticles);

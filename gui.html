@@ -1239,6 +1239,17 @@
   -->
     <script src="./assets/js/script.js"></script>
     <script src="./assets/cli/particles.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            initParticles({
+                color: 'rgba(255, 191, 0, ', // Golden
+                shadowColor: 'rgba(255, 191, 0, 0.5)',
+                minSize: 2, // Smaller
+                maxSize: 4,  // Smaller
+                count: 60   // More small particles for a starry effect
+            });
+        });
+    </script>
 
     <!--
     - ionicon link
